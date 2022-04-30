@@ -1,0 +1,94 @@
+.main-head {
+  width: 90%;
+  margin: auto;
+}
+#logo {
+  font-family: "Lobster", "Montserrat", sans-serif;
+  font-weight: 500;
+}
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  padding: 2rem 0;
+
+  h1 {
+    flex: 1 1 40rem;
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+    a {
+      padding: 0 1.5rem;
+    }
+  }
+}
+.active {
+  background: rgba($color: #000000, $alpha: 0.9);
+  color: $bg-color;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+}
+
+.intro {
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+}
+.intro-text {
+  flex: 1 1 40rem;
+  padding-left: 5%;
+
+  h2 {
+    font-size: $text;
+    padding: 2rem 0;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+
+    span {
+      letter-spacing: normal;
+      color: $gray-text;
+      font-size: $header2;
+      font-family: "Montserrat", "Lato", sans-serif;
+      font-weight: 800;
+      padding: 3rem 0;
+    }
+  }
+  p {
+    padding: 6rem 0;
+    span {
+      font-weight: bold;
+      font-family: "Montserrat", "Lato", sans-serif;
+    }
+  }
+}
+.more {
+  display: inline-block;
+  padding: 1rem 4rem;
+  margin: 4rem 0;
+  border: 2px solid #222;
+  transition: all 0.5s ease;
+  font-weight: 550;
+  &:hover {
+    background: #222;
+    color: #fff;
+  }
+}
+.intro-images {
+  flex: 1 1 40rem;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  z-index: -1;
+  img {
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+  }
+}

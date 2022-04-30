@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Lobster&family=Lato&display=swap");
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  animation: opening 0.5s ease-in-out;
+  font-family: "Lato", "Montserrat", sans-serif;
+  background: $bg-color;
+  color: #222;
+  scrollbar-width: thin;
+}
+
+h1 {
+  font-size: $header1;
+}
+li,
+button,
+label,
+input,
+p,
+a {
+  font-size: $text;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+button,
+a,
+input,
+textarea {
+  outline: none;
+}
+
+@keyframes opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
