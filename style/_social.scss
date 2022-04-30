@@ -1,8 +1,9 @@
 .social {
   @include flex(center, center, column);
   min-height: 100vh;
+  padding: 2rem;
   a {
-    padding: 3rem;
+    padding: 2rem;
     display: inline-block;
     display: flex;
     align-items: center;
